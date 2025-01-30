@@ -51,8 +51,9 @@ body{
 	gap: 2rem;
 }
 
-span {
+span, .section_title {
 	color:#0ec9ac;
+	font-weight: normal;
 }
 .maintext{
 	font-size: 3rem;
@@ -88,6 +89,7 @@ span {
 
 .cards {
 	display:flex;
+	flex-direction: row;
 	margin-top:3rem;
 	color:whitesmoke;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -136,4 +138,14 @@ span {
 	font-size: 2rem;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	color:whitesmoke;
+}
+
+.section4, .section5 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1 fr;
+	justify-content: center;
+	align-items: center;
+	padding: 100px;
+	list-style: none;
 }
