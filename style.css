@@ -148,4 +148,34 @@ span, .section_title {
 	align-items: center;
 	padding: 100px;
 	list-style: none;
+	margin-left: 7rem;
+	margin-right: 7rem;
+}
+
+.li_item {
+	list-style-type: none;
+	padding: 10px;
+}
+
+h3 {
+	color:whitesmoke;
+}
+
+.horizontal_numbers{
+	display: flex;
+	flex-direction: row;
+	padding:20px;
+	margin-left: 13rem;
+	margin-right: 13rem;
+	align-items: center;
+	justify-content:space-evenly;
+	background-color: rgba(0, 28, 63, 0.7);
+	border-radius: 15px;
+}
+
+.number_card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
