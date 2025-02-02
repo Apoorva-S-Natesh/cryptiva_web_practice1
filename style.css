@@ -179,3 +179,49 @@ h3 {
 	justify-content: center;
 	align-items: center;
 }
+
+.our_services {
+	text-align: center;
+	padding:3rem;
+	margin-left: 10rem;
+	margin-right: 10rem;
+}
+
+.services_cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	justify-content:space-between;
+	align-items: center;
+	gap: 3rem;
+}
+
+.services_cards>.card>h3{
+	font-size: 1.5rem;
+}
+
+.services_cards>.card>a {
+	text-emphasis: none;
+	text-decoration: none;
+	font-size: small;
+	font-weight: 600;
+}
+
+.section8{
+	margin-top: 4rem;
+	background-color: rgb(229, 229, 228, 0.1);
+	padding: 2rem;
+}
+
+.trial_days{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.paragraph{
+	width:85vh;
+	text-align: center;
+	padding-bottom: 1rem;
+}
