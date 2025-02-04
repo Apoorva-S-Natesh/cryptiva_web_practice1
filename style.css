@@ -225,3 +225,21 @@ h3 {
 	text-align: center;
 	padding-bottom: 1rem;
 }
+
+.section9{
+	margin: 2rem;
+	padding-left: 7rem;
+	padding-right: 7rem;
+}
+
+.latest_news{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.services_cards>.card>img{
+	width:45vh;
+	height:auto;
+}
