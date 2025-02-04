@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
 body{
 	background-color: rgb(0, 21, 48);
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -191,7 +197,7 @@ h3 {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
-	justify-content:space-between;
+	justify-content:center;
 	align-items: center;
 	gap: 3rem;
 }
@@ -226,20 +232,20 @@ h3 {
 	padding-bottom: 1rem;
 }
 
-.section9{
-	margin: 2rem;
-	padding-left: 7rem;
-	padding-right: 7rem;
-}
 
 .latest_news{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	overflow: auto
 }
 
 .services_cards>.card>img{
-	width:45vh;
+	width:20rem;
 	height:auto;
+}
+.section9{
+    height: 300px;  /* Adjust as needed, or use a specific height value */
+    overflow: hidden; /* This will prevent any overflowing content from causing unexpected spacing */
 }
