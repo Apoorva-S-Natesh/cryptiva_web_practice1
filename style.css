@@ -306,3 +306,77 @@ h3 {
 	gap:2rem;
 	align-items: center;
 }
+
+@media only screen and (max-width: 768px) {
+    .header, .footerbar, .section1, .section2, .section4, .section5, .our_services {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section1, .section4, .section5{
+        grid-template-columns: 1fr; /* Stacks elements vertically */
+    }
+
+    .cards{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .btn {
+        width: 100%; /* Full width buttons */
+        padding: 10px; /* Smaller padding */
+    }
+
+    .icon_heading {
+        flex-direction: column;
+        align-items: center;
+    }
+
+	body {
+        font-size: 14px; /* smaller base font size */
+    }
+
+    .maintext, .sub_heading {
+        font-size: 1.5rem; /* Adjust main text sizes */
+    }
+
+    .section9 {
+        padding: 20px; /* Reduce padding for smaller screens */
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .services_cards {
+        grid-template-columns: 1fr; /* Stack cards vertically */
+        gap: 20px; /* Increase gap for better separation */
+    }
+
+    .card {
+        padding: 20px; /* Reduce padding inside cards */
+    }
+
+    .card h3, .card p {
+        font-size: smaller; /* Adjust text size for better readability */
+    }
+
+	.Newsletter {
+		margin-bottom: 20px; /* Adjust spacing */
+		padding: 20px;
+	}
+
+	#subscribe {
+		flex-direction: column; /* Stack input and button vertically */
+		width: auto; /* Adjust width to fit smaller screens */
+		padding: 20px; /* Increase padding for better touch targets */
+	}
+
+	#subscribe>input {
+		width: 100%; /* Full width for the input */
+		margin-bottom: 10px; /* Add space between input and button */
+	}
+}
