@@ -5,6 +5,9 @@
 }
 
 body{
+	margin: 0;
+	padding:0;
+	width: 100%;
 	background-color: rgb(0, 21, 48);
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -42,16 +45,6 @@ body{
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-weight: 600;
 	font-size: medium;
-}
-
-.section1{
-	display:grid;
-	grid-template-columns: 2fr 1fr;
-	margin-left: 10rem;
-	margin-right: 10rem;
-	justify-content: space-between;
-	align-items: center;
-	padding-top:2rem;
 }
 
 .changing_text{
@@ -93,13 +86,8 @@ span, .section_title {
 	padding-right: 50px;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	text-align: center;
 	border: none;
-}
-
-.section2{
-	margin-left: 10rem;
-	margin-right: 10rem;
-	padding: 2rem;
 }
 
 .cards {
@@ -132,26 +120,24 @@ span, .section_title {
 	align-items:center;
 }
 
+.section1, .section2, .section3, .section4, .section5, .section6, .section7, .section8, .section9, .section10 {
+	padding:100px;
+	margin:0;
+	width:100%;
+}
+
+.section1{
+	display:grid;
+	grid-template-columns: 2fr 1fr;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .section3 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 100px;
-}
-
-#company_logos{
-	display:flex;
-	gap:100px;
-	padding: 20px;
-	justify-content: space-between;
-	margin-top: 20px;
-}
-
-.sub_heading{
-	font-size: 2rem;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	color:whitesmoke;
 }
 
 .section4, .section5 {
@@ -160,10 +146,30 @@ span, .section_title {
 	grid-template-rows: 1 fr;
 	justify-content: center;
 	align-items: center;
-	padding: 100px;
 	list-style: none;
-	margin-left: 7rem;
-	margin-right: 7rem;
+}
+
+.section8{
+	background-color: rgb(229, 229, 228, 0.1);
+}
+
+.section9{
+    height: auto;  /* Adjust as needed, or use a specific height value */
+    overflow: hidden; /* This will prevent any overflowing content from causing unexpected spacing */
+}
+
+#company_logos{
+	display:flex;
+	gap:5rem;
+	padding: 1rem;
+	justify-content: space-between;
+	margin-top: 1rem;
+}
+
+.sub_heading{
+	font-size: 2rem;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color:whitesmoke;
 }
 
 .li_item {
@@ -222,12 +228,6 @@ h3 {
 	font-weight: 600;
 }
 
-.section8{
-	margin-top: 4rem;
-	background-color: rgb(229, 229, 228, 0.1);
-	padding: 2rem;
-}
-
 .trial_days{
 	display:flex;
 	flex-direction: column;
@@ -236,7 +236,7 @@ h3 {
 }
 
 .paragraph{
-	width:85vh;
+	width:80%;
 	text-align: center;
 	padding-bottom: 1rem;
 }
@@ -248,15 +248,6 @@ h3 {
 	justify-content: center;
 	align-items: center;
 	overflow: auto
-}
-
-.section9{
-    height: 600px;  /* Adjust as needed, or use a specific height value */
-    overflow: hidden; /* This will prevent any overflowing content from causing unexpected spacing */
-	padding: 100px;
-	margin-left: 7rem;
-	margin-right: 7rem;
-	margin-bottom: 4rem;
 }
 
 .Newsletter{
@@ -421,4 +412,91 @@ h3 {
 	.footer_links a, .social_logo img {
         padding: 10px; /* Increase padding for better touch targets */
     }
+}
+
+@media only screen and (max-width: 412px) {
+    .header, .footerbar {
+		flex-direction: column;
+		align-items: center;
+		text-align:center;
+        padding: 10px; /* Less padding for smaller screens */
+    }
+
+    .logo {
+        height: 3rem; /* Smaller logo for smaller screens */
+    }
+
+    .hamburger {
+        font-size: 28px; /* Adjust size if needed */
+    }
+
+    .navbar a {
+        padding: 8px 0; /* Less vertical padding for nav items */
+        font-size: 14px; /* Smaller font size for nav links */
+    }
+
+	.footer_links a, .social_logo img {
+		font-size: 12px; /* Smaller text for better fit */
+	}
+
+	.social_logo {
+		gap: 5px; /* Reduced gap between social media icons */
+	}
+	/* general padding and margins for smaller screens */
+	.section1, .section2, .section3, .section4, .section5, .section6, .section7, .section8, .section9, .section10 {
+		padding: 20px; /* Consistent, smaller padding */
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin:0;
+	}
+
+	.subtext, .sub_heading, h3 {
+		font-size: 14px;
+	}
+
+	.btn {
+		padding: 12px 24px; /* Adjust button padding */
+		font-size: 14px; /* Ensure text is not too small */
+		width: 100%;
+	}
+
+	/* images to not overflow their containers */
+	img {
+		width: 100%; /* Ensure images are not wider than the screen */
+		height: auto; /* Maintain aspect ratio */
+	}
+
+	/* card layouts */
+	.cards, .services_cards {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin:2px;
+		padding:2px;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.card, .number_card, .icon_heading, .our_services, .trial_days, .Newsletter {
+		width: 100%;
+	}
+
+	.icon {
+		width: 2rem; /* Smaller icons */
+		height: 2rem; /* Maintain aspect ratio */
+	}
+
+	.navbar {
+		display: none; /* Initially hide navbar on small screens */
+	}
+
+	.navbar.active {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 }
