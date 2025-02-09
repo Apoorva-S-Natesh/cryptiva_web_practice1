@@ -20,15 +20,12 @@ body{
 	display: flex;
 	align-items:center;
 	justify-content: space-between;
-	padding: 7px;
-	margin-right: 10rem;
-	margin-left: 10rem;
 }
 
 .navbar {
 	display:flex;
 	justify-content: space-between;
-	gap:50px;
+	gap:2rem;
 	align-items: flex-end;
 }
 
@@ -48,7 +45,6 @@ body{
 }
 
 .changing_text{
-	margin-right: 5rem;
 	padding:2rem;
 	display:flex;
 	flex-direction: column;
@@ -120,10 +116,10 @@ span, .section_title {
 	align-items:center;
 }
 
-.section1, .section2, .section3, .section4, .section5, .section6, .section7, .section8, .section9, .section10 {
-	padding:100px;
-	margin:0;
-	width:100%;
+.header, .section1, .section2, .section3, .section4, .section5, .section6, .section7, .section8, .section9, .section10 {
+	padding:3rem;
+	margin-left:10%;
+	margin-right:10%;
 }
 
 .section1{
@@ -154,7 +150,7 @@ span, .section_title {
 }
 
 .section9{
-    height: auto;  /* Adjust as needed, or use a specific height value */
+    height: 35rem;  /* Adjust as needed, or use a specific height value */
     overflow: hidden; /* This will prevent any overflowing content from causing unexpected spacing */
 }
 
@@ -184,13 +180,13 @@ h3 {
 .horizontal_numbers{
 	display: flex;
 	flex-direction: row;
-	padding:20px;
-	margin-left: 13rem;
-	margin-right: 13rem;
 	align-items: center;
-	justify-content:space-evenly;
+	justify-content:space-between;
 	background-color: rgba(0, 28, 63, 0.7);
 	border-radius: 15px;
+	text-align: center;
+	padding:5rem;
+	gap:2%;
 }
 
 .number_card {
@@ -201,10 +197,7 @@ h3 {
 }
 
 .our_services {
-	text-align: center;
-	padding:3rem;
-	margin-left: 10rem;
-	margin-right: 10rem;
+	text-align: center;	
 }
 
 .services_cards {
@@ -310,7 +303,8 @@ h3 {
 	.header {
 		flex-direction: column;
 		align-items: center;
-		padding:20px;
+		margin-left: 5%;
+		margin-right: 5%;
 	}
 
 	.hamburger {
@@ -361,8 +355,13 @@ h3 {
         font-size: 1.5rem; /* Adjust main text sizes */
     }
 
+	.subtext, .sub_heading, h3 {
+		font-size: 1rem;
+	}
+
     .section9 {
         padding: 20px; /* Reduce padding for smaller screens */
+		height: auto;
         margin-left: 20px;
         margin-right: 20px;
     }
@@ -379,6 +378,14 @@ h3 {
     .card h3, .card p {
         font-size: smaller; /* Adjust text size for better readability */
     }
+
+	.horizontal_numbers{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
 
 	.Newsletter {
 		margin-bottom: 20px; /* Adjust spacing */
@@ -419,7 +426,8 @@ h3 {
 		flex-direction: column;
 		align-items: center;
 		text-align:center;
-        padding: 10px; /* Less padding for smaller screens */
+        margin-left: 2%;
+		margin-right: 2%;
     }
 
     .logo {
@@ -443,7 +451,7 @@ h3 {
 		gap: 5px; /* Reduced gap between social media icons */
 	}
 	/* general padding and margins for smaller screens */
-	.section1, .section2, .section3, .section4, .section5, .section6, .section7, .section8, .section9, .section10 {
+	.section2, .section3, .section6, .section7, .section8, .section9, .section10 {
 		padding: 20px; /* Consistent, smaller padding */
 		text-align: center;
 		display: flex;
@@ -451,6 +459,11 @@ h3 {
 		align-items: center;
 		justify-content: center;
 		margin:0;
+	}
+	.section1, .section4, .section5 {
+		grid-template-columns: 1fr;
+		padding:20px;
+		text-align: center;
 	}
 
 	.subtext, .sub_heading, h3 {
