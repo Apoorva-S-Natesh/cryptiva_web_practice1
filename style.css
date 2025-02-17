@@ -44,6 +44,10 @@ body{
 	font-size: medium;
 }
 
+.navbar>a:hover{
+	color:#0ec9ac;
+}
+
 .changing_text{
 	padding:2rem;
 	display:flex;
@@ -51,6 +55,49 @@ body{
 	justify-content: center;
 	align-items: flex-start;
 	gap: 2rem;
+}
+
+.c_text {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	white-space: nowrap;
+	border-right: 2px solid whitesmoke; /* Cursor effect */
+	vertical-align: bottom;
+	animation: typing 3s steps(10, end) infinite, blinkCursor 0.5s step-end infinite alternate;
+	width: 10ch; /* Adjust based on longest word */
+}
+
+.c_text::before {
+	content: 'Company';
+	animation: changeText 9s infinite, typing 3s steps(10, end) infinite;
+}
+
+@keyframes changeText {
+	0%, 33% {
+		content: 'Company';
+	}
+	34%, 66% {
+		content: 'Protection';
+	}
+	67%, 99% {
+		content: 'Security';
+	}
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 10ch;
+	}
+}
+
+@keyframes blinkCursor {
+	50% {
+		border-color: transparent;
+	}
 }
 
 span, .section_title {
@@ -84,6 +131,11 @@ span, .section_title {
 	padding-bottom: 20px;
 	text-align: center;
 	border: none;
+}
+
+.btn:hover{
+	cursor:pointer;
+	transform: translate(0, -10px);
 }
 
 .cards {
