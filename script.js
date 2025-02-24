@@ -21,9 +21,8 @@ const createOdometer = (el, value) => {
 
 	const callback = (entries, observer) => {
 		entries.forEach((entry) => {
-			if (entry,isIntersecting) {
-				if (!hasRun)
-				{
+			if (entry.isIntersecting) {
+				if (!hasRun) {
 					odometer.update(value);
 					hasRun = true;
 				}
