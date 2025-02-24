@@ -481,8 +481,8 @@ h3 {
 		flex-direction: column;
 		align-items: center;
 		text-align:center;
-        margin-left: 2%;
-		margin-right: 2%;
+        margin-left: auto;
+		margin-right: auto;
     }
 
     .logo {
@@ -506,8 +506,8 @@ h3 {
 		gap: 5px; /* Reduced gap between social media icons */
 	}
 	/* general padding and margins for smaller screens */
-	.section2, .section3, .section6, .section7, .section8, .section9, .section10 {
-		padding: 20px; /* Consistent, smaller padding */
+	.section2, .section3, .section6, .section7, .section8, .section9, .section10 , .section1, .section4, .section5{
+		padding: 10px; /* Consistent, smaller padding */
 		text-align: center;
 		display: flex;
 		flex-direction: column;
@@ -515,11 +515,11 @@ h3 {
 		justify-content: center;
 		margin:0;
 	}
-	.section1, .section4, .section5 {
+	/* .section1, .section4, .section5 {
 		grid-template-columns: 1fr;
 		padding:20px;
 		text-align: center;
-	}
+	} */
 
 	.subtext, .sub_heading, h3 {
 		font-size: 14px;
