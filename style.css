@@ -149,13 +149,13 @@ span, .section_title {
 	font-size:large;
 	gap: 3rem;
 	justify-content: space-between;
-	align-items: center;
+	align-items: stretch; 
 }
 
 .card{
 	padding:3rem;
 	background-color: rgba(0, 28, 63, 0.7);
-	border-radius: 15px;
+	border-radius: 15px; 
 }
 
 .icon {
@@ -217,10 +217,12 @@ span, .section_title {
 
 #company_logos{
 	display:flex;
-	gap:5rem;
-	padding: 1rem;
-	justify-content: space-between;
+	gap:2%;
+	padding: 3%;
+	justify-content:center;
 	margin-top: 1rem;
+	width: 100%;
+	flex-wrap: wrap;
 }
 
 .sub_heading{
@@ -369,6 +371,37 @@ h3 {
 	justify-content: space-between;
 	gap:2rem;
 	align-items: center;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .cards,.services_cards,.news_cards {
+        display: flex;
+        flex-wrap: wrap; /* Allows cards to wrap onto the next line */
+        gap: 3rem;
+        justify-content: space-between;
+        align-items: stretch; /* Ensuring cards stretch to fill the available height */
+    }
+
+    .card {
+        flex: 1 1 calc(33% - 3rem); /* Three cards per row, accounting for the gap */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 3rem;
+        background-color: rgba(0, 28, 63, 0.7);
+        border-radius: 15px;
+        box-sizing: border-box;
+        height: auto; /* Ensures height adjusts to content or stretches to match other cards */
+    }
+
+    .icon {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .subtext, h3 {
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -535,11 +568,10 @@ h3 {
 		margin:0 auto;
 		width:95%;
 	}
-	/* .section1, .section4, .section5 {
-		grid-template-columns: 1fr;
-		padding:20px;
-		text-align: center;
-	} */
+	#company_logos {
+		flex-wrap: wrap;
+		width:100%;
+	}
 
 	.subtext, .sub_heading, h3 {
 		font-size: 14px;
@@ -558,17 +590,11 @@ h3 {
 	}
 
 	/* card layouts */
-	/* .cards, .services_cards , .news_cards{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin:1rem;
-		padding:1rem;
+	.cards , .news_cards{
+		height:auto;
 		width: 100%;
-		justify-content: center;
-		flex-wrap: wrap;
-		overflow-x: hidden;
-	} */
+		
+	}
 
 	.services_cards , .news_cards{
         grid-template-columns: 1fr; /* Stack cards vertically */
