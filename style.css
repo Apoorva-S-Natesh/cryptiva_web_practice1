@@ -170,7 +170,7 @@ span, .section_title {
 	align-items:center;
 }
 
-.header, .section1, .section2, .section3, .section4, .section5, .section6, .section7, .section8, .section9, .section10 {
+.header, .section1, .security_services-section, .section3, .section4, .section5, .section6, .section7, .section8, .section9, .section10 {
 	padding:3rem;
 	margin-left:auto;
 	margin-right:auto;
@@ -437,7 +437,7 @@ h3 {
         grid-template-columns: 1fr; /* Stacks elements vertically */
     }
 
-	.header, .section1, .section2, .section3, .section4, .section5, .section6, .section7, .section8, .section9, .section10 {
+	.header, .section1, .security_services-section, .section3, .section4, .section5, .section6, .section7, .section8, .section9, .section10 {
         max-width: 95%; /* More space on the sides for better readability */
         padding: 2rem;
     }
@@ -557,7 +557,7 @@ h3 {
 	}
 	/* general padding and margins for smaller screens */
 	
-	.section2, .section3, .section6, .section7, .section8, .section9, .section10 , .section1, .section4, .section5{
+	.security_services-section, .section3, .section6, .section7, .section8, .section9, .section10 , .section1, .section4, .section5{
 		padding: 1.5rem; /* Consistent, smaller padding */
 		text-align: center;
 		display: flex;
